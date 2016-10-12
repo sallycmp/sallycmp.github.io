@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Independent Farms by County - Choropleth</title>
-<script type="text/javascript" src="d3.min.js"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="//d3js.org/queue.v1.min.js"></script>
 <script type="text/javascript" src="//d3js.org/topojson.v1.min.js"></script>
  
@@ -68,7 +68,7 @@ var path = d3.geo.path()
  
 queue()
 .defer(d3.json, "us.json")
-.defer(d3.csv, "sampleData.csv")
+.defer(d3.csv, "sampleData2.csv")
 .await(ready);
  
 function ready(error, us, data) {
